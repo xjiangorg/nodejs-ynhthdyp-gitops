@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: nodejs-ynhthdyp
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-ynhthdyp 
+  name: nodejs-ynhthdyp
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: nodejs-ynhthdyp 
